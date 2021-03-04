@@ -62,7 +62,7 @@ const RandomUser = () => {
     const matchFunction = (item, typed) => {
       const typeUpper = typed.toUpperCase();
       const currentMatch = item.slice(0, typed.length).toLowerCase();
-      if (typeLower === currentMatch) {
+      if (typeUpper === currentMatch) {
         return item;
       }
     };
