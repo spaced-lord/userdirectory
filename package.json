@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/spaced-lord/user-directory.git",
+  "homepage": "https://spaced-lord.github.io/user-directory",
   "name": "user-directory",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.7.3",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.0-beta2",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
@@ -16,7 +17,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
