@@ -36,10 +36,10 @@ const RandomUser = () => {
     });
   }, []);
 
-  const sortArray = () => {
+  const sortClick = () => {
     const sortState = userState.users.sort(function (a, b) {
       var firstName = a.name.toUpperCase();
-      var lastname = a.name.toUpperCase();
+      var lastname = b.name.toUpperCase();
       if (firstName < lastname) {
         return -1;
       } else if (firstName > lastname) {
@@ -61,7 +61,7 @@ const RandomUser = () => {
 
     const matchFunction = (item, typed) => {
       const typeUpper = typed.toUpperCase();
-      const currentMatch = item.slice(0, typed.length).toLowerCase();
+      const currentMatch = item.slice(0, typed.length).toUpperCase();
       if (typeUpper === currentMatch) {
         return item;
       }
@@ -79,7 +79,7 @@ const RandomUser = () => {
       <div>
         <Container />
         <Input onChange={onChange} />
-        <Table onClick={sortArray} />
+        <Table onClick={sortClick} />
       </div>
     </UserContext.Provider>
   );
