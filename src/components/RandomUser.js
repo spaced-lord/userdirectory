@@ -34,7 +34,7 @@ const RandomUser = () => {
         unChangedUserState: userArray,
       });
     });
-  });
+  }, []);
 
   const sortArray = () => {
     const sortState = userState.users.sort(function (a, b) {
