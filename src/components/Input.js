@@ -8,6 +8,7 @@ const InputForm = (props) => {
           Find Name
         </span>
       </div>
+
       <input
         type="text"
         className="form-control"
